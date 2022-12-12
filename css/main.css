@@ -1,0 +1,188 @@
+body {
+    color: #444444;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.sec {
+    padding: 100px 0;
+}
+
+* {
+    /* outline: 1px solid green; */
+}
+
+/* * {
+    outline: 1px solid #333;
+} */
+
+/* 세팅 css */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    line-height: 80px;
+    background: #fff;
+    height: 80px;
+    z-index: 999;
+}
+
+.header .inner {
+    justify-content: space-between;
+}
+
+.header h1 {
+    display: block;
+}
+
+.header ul {
+    gap: 0;
+    text-align: center;
+}
+
+.header .gnb a {
+    display: block;
+}
+
+.header .gnb>ul::before {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: -1000px;
+    right: -1000px;
+    height: 230px;
+    background: #f9f9f9;
+    z-index: 999;
+    display: none;
+}
+
+.header .gnb>ul:hover::before {
+    display: block;
+}
+
+.header .gnb>ul>li {
+    position: relative;
+    font-size: 18px;
+    font-weight: 300;
+    width: 120px;
+}
+
+.header .gnb .s_menu {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+    background: #f9f9f9;
+    width: 100%;
+    z-index: 999;
+    display: none;
+}
+
+.header .gnb>ul:hover .s_menu {
+    display: block;
+}
+
+.header i {
+    line-height: 80px;
+    font-size: 25px;
+}
+
+/* header */
+
+.mainVisual .itm {
+    height: 100vh;
+    position: relative;
+}
+
+.mainVisual .itm01 {
+    background: url(../img/mainVisual01.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .itm02 {
+    background: url(../img/mainVisual02.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .itm03 {
+    background: url(../img/mainVisual03.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .itm04 {
+    background: url(../img/mainVisual04.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .itm05 {
+    background: url(../img/mainVisual05.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .itm06 {
+    background: url(../img/mainVisual06.jpg) no-repeat center center/cover;
+}
+
+.mainVisual h2 {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-600px, 0);
+    font-size: 60px;
+    font-weight: 700;
+
+    color: #fff;
+    line-height: 70px;
+    z-index: 999;
+}
+
+.mainVisual strong {
+    position: absolute;
+    top: 260px;
+    right: 50%;
+    transform: translate(600px, 0);
+    font-size: 30px;
+    line-height: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 999;
+}
+
+.mainVisual strong::before {
+    content: "";
+    display: block;
+    width: 170px;
+    height: 4px;
+    background: #fff;
+}
+
+.mainVisual .down {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+.mainVisual .down p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.mainVisual .mainSlide .slick-arrow {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-600px, 0);
+    z-index: 999;
+}
