@@ -32,3 +32,7 @@ body {
     letter-spacing: -0.025em;
     /* letter-spacing: 자간을 조절해주는 명령어 */
 }
+
+em {
+    font-style: normal;
+}

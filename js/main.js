@@ -43,10 +43,18 @@ $(function () {
     })
     // mainVisual
 
-    $('.con_slide').slick({
+    $('.con_slide').slick();
+
+    $('.news_slide').slick({
         arrows: false,
     });
 
+    $('.mainNews .news .prev').on('click', function () {
+        $('.news_slide').slick('slickPrev');
+    });
+    $('.mainNews .news .next').on('click', function () {
+        $('.news_slide').slick('slickNext');
+    });
 })
 
 
