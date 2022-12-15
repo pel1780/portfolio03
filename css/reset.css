@@ -33,6 +33,7 @@ body {
     /* letter-spacing: 자간을 조절해주는 명령어 */
 }
 
-em {
+em,
+address {
     font-style: normal;
 }
